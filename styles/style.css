@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+
+    /* Colors */
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+
+    /* Font size paragraph */
+
+    --Fontsizeparagraph: 14px;
+
+    /* Font family 400, 600, 700 */
+
+    --font-family: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Grey900);
+}
+
+.contenedor__principal {
+    background-color: var(--Grey800);
+    padding-inline: 3%;
+    margin-block: 30%;
+    margin-inline: 7%;
+    border-radius: 10px;
+}
+
+/* imagen */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+.imagen {
+    max-width: 30%;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 40% ;
+    margin-block: 5% 10%;
+}
+
+h1 {
+    color: var(--White);
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: var(--Fontsizeparagraph);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    color: var(--White);
+}
+
+header p b {
+    color: var(--Green);
+    font-weight: 600;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Grey700);
+    padding: 5%;
+    margin-block: 5%;
+    margin-inline: 5%;
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background-color: var(--Green);
+}
+
+nav ul li p {
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--Fontsizeparagraph);
+    font-weight: 600;
+}
+
+nav ul li p:hover {
+    color: var(--Grey900);
+}
+
+nav {
+    padding-bottom: 5%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 10px;
+    color: var(--White);
+    font-family: var(--font-family);
+}
+footer div a {
+    text-decoration: none;
+    color: var(--Green);
+    font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 375px) and (max-width: 768px) {
+    .contenedor__principal {
+        margin-inline: 25%;
+        margin-block: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedor__principal {
+        margin-inline: 30%;
+        margin-block: 10%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .contenedor__principal {
+        margin-inline: 35%;
+        margin-block: 5%;
+    }
+}
